@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Manajemen Hutan - RPKH & RPJP</title>
+  <style>
+    :root{
+      --green:#2e7d32;
+      --accent:#388e3c;
+      --muted:#f4f4f4;
+      --card:#ffffff;
+      --text:#263238;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter, "Segoe UI", Roboto, Arial, sans-serif;
+      background:var(--muted);
+      color:var(--text);
+      line-height:1.5;
+    }
+    header{
+      background:linear-gradient(90deg,var(--green),#1b5e20);
+      color:#fff;
+      padding:28px 18px;
+      text-align:center;
+    }
+    header h1{margin:0;font-size:1.6rem}
+    header p{margin:6px 0 0;opacity:0.95}
+
+    nav{
+      display:flex;
+      gap:12px;
+      justify-content:center;
+      padding:10px 12px;
+      background:var(--accent);
+      flex-wrap:wrap;
+    }
+    nav a{
+      color:#fff;
+      text-decoration:none;
+      padding:8px 12px;
+      border-radius:6px;
+      font-weight:600;
+    }
+    nav a:hover{opacity:0.95; background:rgba(255,255,255,0.06)}
+
+    .container{
+      max-width:980px;
+      margin:20px auto;
+      padding:0 16px;
+    }
+    .card{
+      background:var(--card);
+      border-radius:10px;
+      padding:18px;
+      margin-bottom:18px;
+      box-shadow:0 6px 18px rgba(30,30,30,0.06);
+    }
+    h2{color:var(--green); margin-top:0}
+    ul{margin:8px 0 0 20px}
+
+    /* two-column layout for larger screens */
+    .grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:16px;
+    }
+    @media(min-width:880px){
+      .grid{grid-template-columns:2fr 1fr}
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:8px;
+    }
+    th,td{
+      border:1px solid #e6e6e6;
+      padding:10px;
+      text-align:left;
+      font-size:0.95rem;
+    }
+    th{background:#f7fdf7; color:var(--green); font-weight:700}
+
+    /* diagram image styling */
+    .diagram img{
+      width:100%;
+      height:auto;
+      border-radius:8px;
+      border:2px solid var(--green);
+      display:block;
+    }
+
+    footer{
+      text-align:center;
+      padding:14px 10px;
+      color:#fff;
+      background:var(--green);
+      margin-top:18px;
+      border-top:4px solid rgba(255,255,255,0.04);
+    }
+
+    /* small helper */
+    .muted{color:#666; font-size:0.95rem}
+    .kbd{background:#f1f1f1;border-radius:6px;padding:4px 8px;font-family:monospace;font-size:0.9rem}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Manajemen Hutan</h1>
+    <p>Rencana Pengaturan Kelestarian Hasil (RPKH) & Rencana Pengelolaan Jangka Panjang (RPJP)</p>
+  </header>
+
+  <nav>
+    <a href="#rpkh">RPKH</a>
+    <a href="#rpjp">RPJP</a>
+    <a href="#perbandingan">Perbandingan</a>
+    <a href="#diagram">Diagram</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <main class="container">
+    <section id="rpkh" class="card">
+      <h2>RPKH (Rencana Pengaturan Kelestarian Hasil)</h2>
+      <p class="muted">RPKH adalah dokumen perencanaan teknis yang mengatur pemanfaatan hasil hutan agar tetap lestari dan berkelanjutan.</p>
+      <div class="grid">
+        <div>
+          <h3>Tujuan utama</h3>
+          <ul>
+            <li>Menjamin kelestarian hasil hutan melalui perencanaan jatah tebangan dan rotasi.</li>
+            <li>Mengatur teknik silvikultur dan praktik pemanenan yang ramah lingkungan.</li>
+            <li>Menyediakan mekanisme monitoring, evaluasi, dan adaptasi di lapangan.</li>
+            <li>Melibatkan masyarakat lokal dalam pemanfaatan dan pengawasan.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Komponen teknis</h3>
+          <ul>
+            <li>Jatah Tebangan Tahunan (Annual Allowable Cut).</li>
+            <li>Rotasi dan teknik silvikultur.</li>
+            <li>Rencana pemanenan dan akses jalan.</li>
+            <li>Monitoring pertumbuhan, regenerasi, dan dampak sosial-ekonomi.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="rpjp" class="card">
+      <h2>RPJP (Rencana Pengelolaan Jangka Panjang)</h2>
+      <p class="muted">RPJP adalah rencana strategis jangka panjang (biasanya 20–30 tahun) yang menjadi dasar kebijakan pengelolaan hutan.</p>
+      <ul>
+        <li>Menetapkan visi, misi, dan tujuan pengelolaan hutan dalam jangka panjang.</li>
+        <li>Mengintegrasikan konservasi, pemanfaatan, dan kesejahteraan masyarakat.</li>
+        <li>Menjadi acuan bagi penyusunan RPKH dan rencana tahunan.</li>
+      </ul>
+    </section>
+
+    <section id="perbandingan" class="card">
+      <h2>Tabel Perbandingan: RPKH vs RPJP</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Aspek</th>
+            <th>RPKH</th>
+            <th>RPJP</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Jangka waktu</strong></td>
+            <td>Tahunan / 5 tahunan</td>
+            <td>Jangka panjang (20–30 tahun)</td>
+          </tr>
+          <tr>
+            <td><strong>Fokus</strong></td>
+            <td>Pelaksanaan teknis dan operasional</td>
+            <td>Visi strategis dan kebijakan</td>
+          </tr>
+          <tr>
+            <td><strong>Isi utama</strong></td>
+            <td>Jatah tebangan, rotasi, silvikultur, monitoring</td>
+            <td>Tujuan jangka panjang, kebijakan konservasi, arah pengelolaan</td>
+          </tr>
+          <tr>
+            <td><strong>Peran masyarakat</strong></td>
+            <td>Pelibatan operasional dan pengawasan lokal</td>
+            <td>Integrasi kesejahteraan dan peran strategis</td>
+          </tr>
+          <tr>
+            <td><strong>Output</strong></td>
+            <td>Rencana kerja lapangan yang dapat diukur</td>
+            <td>Pedoman kebijakan dan target jangka panjang</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="diagram" class="card diagram">
+      <h2>Diagram Hubungan RPKH dan RPJP</h2>
+      <!--
+        Ganti nilai src di bawah dengan:
+        - URL gambar yang kamu punya, atau
+        - path lokal seperti "images/diagram.png" jika kamu menyimpan gambar di folder images.
+      -->
+      <img src="https://copilot.microsoft.com/th/id/BCO.c2c13793-cd62-4d5e-a790-8fc3cf8785ee.png"
+           alt="Diagram Hubungan RPKH dan RPJP" />
+      <p class="muted">Diagram menunjukkan RPJP sebagai dasar strategis yang mengarahkan penyusunan RPKH; RPKH mengatur teknis pelaksanaan untuk mencapai tujuan RPJP.</p>
+    </section>
+
+    <section id="kontak" class="card">
+      <h2>Kontak & Cara Pakai</h2>
+      <p>Langkah cepat untuk menjalankan web ini secara lokal:</p>
+      <ol>
+        <li>Simpan file ini sebagai <span class="kbd">index.html</span>.</li>
+        <li>Jika menggunakan gambar diagram secara lokal, buat folder <span class="kbd">images</span> dan letakkan file gambar di sana, lalu ubah atribut <span class="kbd">src</span> pada tag &lt;img&gt; menjadi <span class="kbd">images/diagram.png</span>.</li>
+        <li>Buka <span class="kbd">index.html</span> di browser (klik kanan → Open with → pilih browser).</li>
+      </ol>
+      <p class="muted">Ingin saya sesuaikan lagi (mis. warna, logo, atau menambahkan halaman referensi)?</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>&copy; 2026 — Halaman sederhana Manajemen Hutan. Dibuat untuk keperluan pembelajaran.</small>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll untuk navigasi internal
+    document.querySelectorAll('nav a').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+      });
+    });
+  </script>
+</body>
+</html>
